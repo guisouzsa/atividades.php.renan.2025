@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade 8</title>
+    <title>atividade 8</title>
 </head>
 <body>
-    <h1>Conversão de Dólar para Real</h1>
-    <?php
-    $cotacao = 5.20;      
-    $dolares = 100;        
-
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $cotacao = $_POST["cotacao"];
+    $dolares = $_POST["dolares"];
     $reais = $cotacao * $dolares;
-    echo "<p>Cotação do dólar: R$ " . $cotacao . "</p>";
-    echo "<p>Quantidade de dólares: US$ " . $dolares . "</p>";
-    echo "<h3>Total em reais: R$ " . $reais . "</h3>";
-    ?>
+
+    echo "Valor em reais: R$ " . number_format($reais, 2, ',', '.');
+}
+?>
+
+<form method="post">
+    Cotação do dólar: <input type="text" name="cotacao"><br>
+    Quantidade em dólares: <input type="text" name="dolares"><br>
+    <input type="submit" value="Converter">
+</form>
+
 </body>
 </html>
