@@ -6,20 +6,33 @@
     <title>Atividade 5</title>
 </head>
 <body>
+        <form method="post">
+        Qual o nome do aluno?
+        <input type="text" name="nomealuno"><br>
+
+        Qual a primeira nota?
+        <input type="number" name="nota1"><br>
+        
+        Qual a segunda nota?
+        <input type="number" name="nota2"><br>
+
+        Qual a terceira nota?
+        <input type="number" name="nota3"><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
     <?php
-    $nomealuno = "Gui";
-    echo "Aluno: $nomealuno <br>";
+        if($_SERVER["REQUEST_METHOD"] == "POST") {
+            $nomealuno = $_POST["nomealuno"];
+            $nota1 =  $_POST["nota1"];
+            $nota2 =  $_POST["nota2"];
+            $nota3 =  $_POST["nota3"];
+
     
-    $nota1 = 8.5; 
-    echo "Nota 1: $nota1 <br>";
-    $nota2 = 10; 
-    echo "Nota 2: $nota2 <br>";
-    $nota3 = 6.5; 
-    echo "Nota 3: $nota3 <br>";
-
-    $media = ($nota1 + $nota2 + $nota3) / 3;
-    echo "A média do aluno $nomealuno é $media <br> "
-
+            $media = ($nota1 + $nota2 + $nota3) / 3;
+            echo "A média do aluno $nomealuno é $media <br>";
+}
     ?>
 </body>
 </html>

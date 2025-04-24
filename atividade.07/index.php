@@ -6,12 +6,20 @@
     <title>Atividade 7</title>
 </head>
 <body>
-    <?php
-    $TemperaturaCelsius = 35;
-    echo "Temperatura em Celsius: $TemperaturaCelsius <br>";
+    <form method="post">
+        Qual a temperatura em Celcius?
+        <input type="text" name="temp_celcius"><br>
+    
+        <input type="submit" value="Enviar">
+    </form>
 
-    $Tempconvertida = (9*$TemperaturaCelsius+160) / 5;
-    echo "Temperatura convertida em Fahrenheit: $Tempconvertida <br>";
+    <?php
+        if($_SERVER["REQUEST_METHOD"] == "POST") {
+            $TemperaturaCelsius =  $_POST["temp_celcius"];
+
+        $Tempconvertida = (9*$TemperaturaCelsius+160) / 5;
+        echo "Temperatura em Fahrenheit: $Tempconvertida <br>";
+        }
     ?>
 </body>
 </html>

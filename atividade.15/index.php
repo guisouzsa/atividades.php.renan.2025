@@ -18,7 +18,7 @@
            echo "o número $valor1 está entre 100 e 200";
         }
         else{
-            echo "NÃO ESTÁ NO INTERVALO";
+            echo "NÃO ESTÁ NO INTERVALO DE 100 A 200";
         }
     }
     ?>
