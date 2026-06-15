@@ -11,15 +11,15 @@ As atividades incluem:
 * Operações matemáticas e cálculos
 * Estruturas condicionais (`if` e `else`)
 * Validação de entradas do usuário
-* Desenvolvimento de pequenas aplicações web dinâmicas
+* Desenvolvimento de páginas dinâmicas simples
 
 ## Objetivo
 
-O objetivo deste repositório é praticar conceitos fundamentais de programação web, integrando PHP com HTML para criação de páginas dinâmicas simples.
+Este repositório tem como objetivo o estudo e a prática de conceitos fundamentais de programação web, integrando PHP com HTML.
 
 ## Estrutura
 
-O projeto está organizado em pastas numeradas de atividade 01 até atividade 15, cada uma contendo um exercício independente.
+O repositório está organizado em pastas numeradas de atividade 01 até atividade 15, cada uma contendo um exercício independente.
 
 ## Tecnologias utilizadas
 
@@ -28,11 +28,11 @@ O projeto está organizado em pastas numeradas de atividade 01 até atividade 15
 * CSS (quando aplicado)
 * Git / GitHub
 
-## Informações do repositório
+## Informações
 
 * Professor: Renan
 * Ano: 2025
 
-## Autor
+## Observação
 
-Repositório criado para fins de estudo e prática de desenvolvimento web.
+Repositório utilizado exclusivamente para fins de estudo.
