@@ -30,7 +30,7 @@ O projeto está organizado em pastas numeradas de atividade 01 até atividade 15
 
 ## Informações do repositório
 
-* Professor: Renan Guisouzsa
+* Professor: Renan
 * Ano: 2025
 
 ## Autor
